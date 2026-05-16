@@ -1253,8 +1253,8 @@ header{
     .hero-left h1{
 
         font-size:36px;
-
         line-height:1.1;
+        margin-top:100px;
     }
 
     /* LOGO */
