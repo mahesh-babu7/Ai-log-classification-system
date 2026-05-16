@@ -1012,6 +1012,18 @@ header{
 ========================================= */
 
 @media(max-width:1024px){
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .logo-section{
+         gap:55px;
+   }
+
+    .logo-section img{
+        width:60%;
+    } 
 
     /* HERO */
 
