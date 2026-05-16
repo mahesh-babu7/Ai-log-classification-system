@@ -1007,40 +1007,57 @@ header{
     color:#94a3b8;
 }
 
-
 /* =========================================
-   MOBILE RESPONSIVE FIX
+   MOBILE RESPONSIVE DESIGN
 ========================================= */
 
 @media(max-width:768px){
+
+    /* TOP BANNER */
+
+    .top-banner{
+        padding:14px;
+        font-size:16px;
+        line-height:1.5;
+        text-align:center;
+    }
 
     /* NAVBAR */
 
     .main-nav{
         flex-direction:column;
         align-items:center;
-        gap:20px;
-        padding:20px 0;
+        gap:12px;
+        padding:12px 0;
+    }
+
+    nav{
+        padding:10px 0;
     }
 
     /* LOGO SECTION */
 
     .logo-section{
         flex-direction:column;
+        align-items:center;
         text-align:center;
-        gap:10px;
+        gap:6px;
     }
 
+    /* LOGO IMAGE */
+
     .logo-section img{
-        width:70px;
+        width:95px;
     }
+
+    /* COLLEGE TEXT */
 
     .logo-text h2{
         font-size:18px;
     }
 
     .logo-text p{
-        font-size:14px;
+        font-size:13px;
     }
 
     /* NAV LINKS */
@@ -1053,8 +1070,10 @@ header{
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap:15px;
+        gap:14px;
+
         padding:0;
+        margin:0;
     }
 
     .nav-links ul li{
@@ -1062,7 +1081,8 @@ header{
     }
 
     .nav-links a{
-        font-size:18px;
+        font-size:16px;
+        font-weight:600;
     }
 
     /* HERO SECTION */
@@ -1071,14 +1091,24 @@ header{
         flex-direction:column;
         text-align:center;
         gap:40px;
+
         padding:20px;
+        margin-top:0;
+        padding-top:20px;
+    }
+
+    /* HERO LEFT */
+
+    .hero-left{
+        width:100%;
     }
 
     /* HERO TITLE */
 
     .hero-left h1{
-        font-size:42px;
+        font-size:34px;
         line-height:1.1;
+        margin-top:0;
     }
 
     /* HERO PARAGRAPH */
@@ -1088,7 +1118,7 @@ header{
         line-height:1.7;
     }
 
-    /* BUTTONS */
+    /* HERO BUTTONS */
 
     .hero-buttons{
         flex-direction:column;
@@ -1104,6 +1134,10 @@ header{
 
     /* HERO IMAGE */
 
+    .hero-right{
+        width:100%;
+    }
+
     .hero-right img{
         width:100%;
     }
@@ -1117,10 +1151,40 @@ header{
         font-size:34px;
     }
 
-    /* FEATURE CARDS */
+    /* FEATURES */
 
     .features-grid{
         grid-template-columns:1fr;
+    }
+
+    /* TIMELINE */
+
+    .timeline::before{
+        left:30px;
+    }
+
+    .timeline-step{
+        width:100%;
+        padding-left:90px;
+        padding-right:20px;
+
+        text-align:left !important;
+        left:0 !important;
+    }
+
+    .step-number{
+        left:0 !important;
+        right:auto !important;
+    }
+
+    /* LOG TERMINAL */
+
+    .terminal-body{
+        padding:25px;
+    }
+
+    .terminal-body p{
+        font-size:15px;
     }
 
     /* ANALYTICS */
@@ -1148,22 +1212,33 @@ header{
 
 @media(max-width:480px){
 
+    .top-banner{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .logo-section img{
+        width:80px;
+    }
+
+    .logo-text h2{
+        font-size:16px;
+    }
+
+    .logo-text p{
+        font-size:12px;
+    }
+
     .hero-left h1{
-        font-size:34px;
+        font-size:30px;
     }
 
     .hero-left p{
         font-size:16px;
     }
 
-    .top-banner{
-        font-size:15px;
-        line-height:1.5;
-        padding:12px;
-    }
-
     .nav-links a{
-        font-size:16px;
+        font-size:15px;
     }
 
     .feature-card,
@@ -1187,4 +1262,3 @@ header{
     .terminal-body p{
         font-size:14px;
     }
-}
