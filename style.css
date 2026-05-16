@@ -1008,59 +1008,73 @@ header{
 }
 
 /* =========================================
-   MOBILE RESPONSIVE DESIGN
+   MOBILE RESPONSIVE FIX
 ========================================= */
 
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
-    /* TOP BANNER */
+    /* TOP BLUE BAR */
 
     .top-banner{
-        padding:14px;
-        font-size:16px;
-        line-height:1.5;
+        padding:12px 10px;
+        font-size:15px;
         text-align:center;
+        line-height:1.5;
     }
 
     /* NAVBAR */
 
     .main-nav{
+        display:flex;
         flex-direction:column;
         align-items:center;
-        gap:12px;
-        padding:12px 0;
-    }
+        justify-content:center;
 
-    nav{
-        padding:10px 0;
+        padding:15px 10px;
+        gap:15px;
+
+        background:white;
     }
 
     /* LOGO SECTION */
 
     .logo-section{
+        display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:center;
+
         text-align:center;
-        gap:6px;
+
+        gap:8px;
     }
 
-    /* LOGO IMAGE */
+    /* BIGGER COLLEGE LOGO */
 
     .logo-section img{
-        width:95px;
+        width:120px;
+        height:auto;
     }
 
     /* COLLEGE TEXT */
 
     .logo-text h2{
-        font-size:18px;
+        font-size:20px;
+        line-height:1.3;
     }
 
     .logo-text p{
         font-size:13px;
     }
 
-    /* NAV LINKS */
+    /* PROJECT NAME */
+
+    .project-name{
+        font-size:16px;
+        text-align:center;
+    }
+
+    /* NAVIGATION LINKS */
 
     .nav-links{
         width:100%;
@@ -1070,17 +1084,21 @@ header{
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        gap:14px;
+        align-items:center;
+
+        gap:18px;
 
         padding:0;
         margin:0;
+
+        list-style:none;
     }
 
     .nav-links ul li{
         list-style:none;
     }
 
-    .nav-links a{
+    .nav-links ul li a{
         font-size:16px;
         font-weight:600;
     }
@@ -1088,13 +1106,17 @@ header{
     /* HERO SECTION */
 
     .hero-section{
+        display:flex;
         flex-direction:column;
-        text-align:center;
-        gap:40px;
 
-        padding:20px;
-        margin-top:0;
-        padding-top:20px;
+        align-items:center;
+        justify-content:center;
+
+        text-align:center;
+
+        padding:40px 20px 20px;
+
+        gap:40px;
     }
 
     /* HERO LEFT */
@@ -1103,31 +1125,47 @@ header{
         width:100%;
     }
 
-    /* HERO TITLE */
+    /* HERO TITLE FIX */
 
     .hero-left h1{
-        font-size:34px;
-        line-height:1.1;
+
+        font-size:42px;
+
+        line-height:1.05;
+
         margin-top:0;
+
+        word-break:break-word;
     }
 
-    /* HERO PARAGRAPH */
+    /* HERO DESCRIPTION */
 
     .hero-left p{
+
         font-size:18px;
-        line-height:1.7;
+
+        line-height:1.8;
+
+        margin-top:20px;
     }
 
-    /* HERO BUTTONS */
+    /* BUTTONS */
 
     .hero-buttons{
+
+        display:flex;
         flex-direction:column;
-        gap:20px;
+
         width:100%;
+
+        gap:20px;
+
+        margin-top:30px;
     }
 
     .primary-btn,
     .secondary-btn{
+
         width:100%;
         text-align:center;
     }
@@ -1140,51 +1178,13 @@ header{
 
     .hero-right img{
         width:100%;
-    }
-
-    /* SECTION TITLES */
-
-    .features-title h2,
-    .workflow-title h2,
-    .logs-title h2,
-    .analytics-title h2{
-        font-size:34px;
+        max-width:100%;
     }
 
     /* FEATURES */
 
     .features-grid{
         grid-template-columns:1fr;
-    }
-
-    /* TIMELINE */
-
-    .timeline::before{
-        left:30px;
-    }
-
-    .timeline-step{
-        width:100%;
-        padding-left:90px;
-        padding-right:20px;
-
-        text-align:left !important;
-        left:0 !important;
-    }
-
-    .step-number{
-        left:0 !important;
-        right:auto !important;
-    }
-
-    /* LOG TERMINAL */
-
-    .terminal-body{
-        padding:25px;
-    }
-
-    .terminal-body p{
-        font-size:15px;
     }
 
     /* ANALYTICS */
@@ -1197,63 +1197,31 @@ header{
         grid-template-columns:1fr;
     }
 
-    /* FOOTER */
+    /* TIMELINE */
 
-    .footer-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-}
-
-
-/* =========================================
-   SMALL MOBILE PHONES
-========================================= */
-
-@media(max-width:480px){
-
-    .top-banner{
-        font-size:14px;
-        padding:12px;
+    .timeline::before{
+        left:25px;
     }
 
-    .logo-section img{
-        width:80px;
+    .timeline-step{
+
+        width:100%;
+
+        left:0 !important;
+
+        padding-left:80px;
+        padding-right:20px;
+
+        text-align:left !important;
     }
 
-    .logo-text h2{
-        font-size:16px;
+    .step-number{
+
+        left:0 !important;
+        right:auto !important;
     }
 
-    .logo-text p{
-        font-size:12px;
-    }
-
-    .hero-left h1{
-        font-size:30px;
-    }
-
-    .hero-left p{
-        font-size:16px;
-    }
-
-    .nav-links a{
-        font-size:15px;
-    }
-
-    .feature-card,
-    .analytics-card,
-    .team-card,
-    .step-content{
-        padding:22px;
-    }
-
-    .workflow-title h2,
-    .features-title h2,
-    .logs-title h2,
-    .analytics-title h2{
-        font-size:28px;
-    }
+    /* TERMINAL */
 
     .terminal-body{
         padding:20px;
@@ -1262,3 +1230,52 @@ header{
     .terminal-body p{
         font-size:14px;
     }
+
+    /* FOOTER */
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE PHONES
+========================================= */
+
+@media screen and (max-width:480px){
+
+    /* BIGGER TITLE VISIBILITY */
+
+    .hero-left h1{
+
+        font-size:36px;
+
+        line-height:1.1;
+    }
+
+    /* LOGO */
+
+    .logo-section img{
+        width:100px;
+    }
+
+    /* NAV LINKS */
+
+    .nav-links ul{
+        gap:14px;
+    }
+
+    .nav-links ul li a{
+        font-size:15px;
+    }
+
+    /* TEXT */
+
+    .hero-left p{
+        font-size:16px;
+    }
+
+}
